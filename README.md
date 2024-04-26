@@ -5,10 +5,6 @@
 
 Hash strings using the non-cryptographic hash Murmur3 in Gleam.
 
-> [!WARNING]
-> For erlang targets, you should have [elixir](https://elixir-lang.org/install.html) installed as this package relies on an external function internally for performance reasons.
-> This might change in later versions when we provide a gleam-only version of the algorithm.
-
 ```sh
 gleam add mumu
 ```
@@ -19,6 +15,10 @@ let assert 3297211900 = mumu.hash("some-data")
 ```
 
 Further documentation can be found at <https://hexdocs.pm/mumu>.
+
+> [!WARNING]
+> For erlang targets, you should have [elixir](https://elixir-lang.org/install.html) installed as this package relies on an external function internally for performance reasons.
+> This might change in later versions when we provide a gleam-only version of the algorithm.
 
 ## Development
 
