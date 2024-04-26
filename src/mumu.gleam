@@ -2,7 +2,7 @@
 ///
 /// ```gleam
 /// hash("some data")
-/// // -> 3297211900
+/// // -> 875_689_107
 /// ```
 ///
 pub fn hash(input: String) -> Int {
@@ -10,7 +10,11 @@ pub fn hash(input: String) -> Int {
 }
 
 /// Hash strings using different seed values.
-/// By default the `hash` function uses `0` as the seed value.
+///
+/// ```gleam
+/// hash_with_seed("some data", 1)
+/// // -> 875_689_107
+/// ```
 ///
 @external(erlang, "Elixir.Murmur", "hash_x86_32")
 @external(javascript, "./murmurhash3_gc.mjs", "murmurhash3_32_gc")

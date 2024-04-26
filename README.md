@@ -11,7 +11,11 @@ gleam add mumu
 ```gleam
 import mumu
 
-let assert 3297211900 = mumu.hash("some-data")
+mumu.hash("some-data")
+// -> 875_689_107
+
+mumu.hash_with_seed("some-data", 1)
+// -> 3_388_568_194
 ```
 
 Further documentation can be found at <https://hexdocs.pm/mumu>.
