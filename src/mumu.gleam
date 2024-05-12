@@ -16,6 +16,6 @@ pub fn hash(input: String) -> Int {
 /// // -> 875_689_107
 /// ```
 ///
-@external(erlang, "Elixir.Murmur", "hash_x86_32")
+@external(erlang, "erlang_murmurhash", "murmurhash3_32")
 @external(javascript, "./murmurhash3_gc.mjs", "murmurhash3_32_gc")
 pub fn hash_with_seed(input: String, seed: Int) -> Int
