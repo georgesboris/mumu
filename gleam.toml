@@ -1,5 +1,5 @@
 name = "mumu"
-version = "1.0.2"
+version = "1.0.3"
 
 description = "Hash strings using the non-cryptographic hash Murmur3 in Gleam"
 licences = ["MIT"]
